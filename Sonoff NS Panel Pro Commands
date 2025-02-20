@@ -1,0 +1,33 @@
+adb connect 192.168.xxx.xxx
+
+adb install "C:\path\to\file\nspanel pro\ultra-small-launcher.apk"
+
+adb shell input keyevent 3
+
+select set "Launcher" as default
+
+adb install -r "C:\path\to\file\nspanel pro\Android System WebView_130.0.6723.58_APKPure.apk"
+
+adb install "C:\path\to\file\nspanel pro\com.google.android.tts_googletts.google-speech-apk_20240912.01_p2.684678293-210511223_minAPI26(armeabi-v7a)(nodpi)_apkmirror.com.apk"
+
+adb install "C:\path\to\file\nspanel pro\nspanel-pro-tools-2.2.4-release.apk"
+
+adb shell 
+
+su 
+pm disable com.eWeLinkControlPanel
+pm disable com.eWeLinkNSPro.dev 
+pm disable com.rockchip.devicetest 
+pm disable android.rockchip.update.service 
+pm disable com.android.gl2jni 
+pm disable com.smatek.test 
+pm disable android.rk.RockVideoPlayer 
+pm disable acr.browser.barebones 
+pm disable org.chromium.webview_shell 
+pm disable com.android.music 
+pm disable com.android.nfc 
+pm disable com.DeviceTest 
+pm disable com.cghs.stresstest 
+
+-----set NTP server-------
+adb shell settings put global ntp_server ha.internal
