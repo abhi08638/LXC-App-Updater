@@ -1,0 +1,5 @@
+mqtt:
+  sensor:
+    - name: "NSP-HA Updater"                         # name of sensor
+      state_topic: "lxc-mqtt/nsp-lxc/state"     # listen to topic
+      expire_after: 300
