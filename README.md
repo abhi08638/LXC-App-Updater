@@ -116,3 +116,5 @@ You can use any linux server/computer you want but I am using a debian LXC in pr
             0 11 1,15 * * ~/scripts/install-apps.sh
 
 Test it out an celebrate if all goes well!
+
+For manually pushing apps to your android devices, use manual-install.sh. Make sure to update the file path in the script with the location of your apps.
